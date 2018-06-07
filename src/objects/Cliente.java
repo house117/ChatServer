@@ -59,13 +59,8 @@ public class Cliente extends Thread{
                         colaMensajes.encolar(strFileContents);
                         colaMensajes.notifyAll();
                     }
-                    
-                }
-                
-                this.sleep(5000);
+                } 
             } catch (IOException ex) {
-                Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (InterruptedException ex) {
                 Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
